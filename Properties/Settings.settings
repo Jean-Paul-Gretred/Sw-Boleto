@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SwBoleto.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="client_secret_h" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CLIENT SECRET</Value>
+    </Setting>
+    <Setting Name="client_id_h" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CLIENT iID</Value>
+    </Setting>
+    <Setting Name="developer_application_key_h" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DEVELOPER_APPLICATION</Value>
+    </Setting>
+    <Setting Name="client_basic" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CLIENT BASIC BB</Value>
+    </Setting>
+    <Setting Name="Nome_BD_PRODUÇÃO" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">BANCO DE DADOS</Value>
+    </Setting>
+    <Setting Name="Usuario_BD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="Senha_BD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Servidor_BD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SERVIDOR SQL</Value>
+    </Setting>
+    <Setting Name="Ambiente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PRODUÇÃO</Value>
+    </Setting>
+    <Setting Name="Banco" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INTER</Value>
+    </Setting>
+    <Setting Name="CaminhoCertificado" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CERTIFICADO</Value>
+    </Setting>
+    <Setting Name="SenhaCertificado" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SENHA CERTIFICADO</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
