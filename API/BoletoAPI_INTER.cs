@@ -15,10 +15,10 @@ namespace SwBoleto.API
     internal class BoletoAPI_INTER
     {
         public static string client_id_h = Properties.Settings.Default.client_id_h;
-        //"eyJpZCI6IjFhNTVlM2ItYjZhZS00ZDBhLWFjOTIiLCJjb2RpZ29QdWJsaWNhZG9yIjowLCJjb2RpZ29Tb2Z0d2FyZSI6NTM5NzksInNlcXVlbmNpYWxJbnN0YWxhY2FvIjoxfQ";
+ 
         public static string client_secret_h = Properties.Settings.Default.client_secret_h;
-        //"eyJpZCI6IjNkNDUiLCJjb2RpZ29QdWJsaWNhZG9yIjowLCJjb2RpZ29Tb2Z0d2FyZSI6NTM5NzksInNlcXVlbmNpYWxJbnN0YWxhY2FvIjoxLCJzZXF1ZW5jaWFsQ3JlZGVuY2lhbCI6MSwiYW1iaWVudGUiOiJob21vbG9nYWNhbyIsImlhdCI6MTY3NDg0NDE2NDEyOX0";
-       public static string permissoes = "boleto-cobranca.write boleto-cobranca.read";
+      
+        public static string permissoes = "boleto-cobranca.write boleto-cobranca.read";
         public static X509Certificate2 certificate;
 
         public static async Task<Token> GerarToken()
