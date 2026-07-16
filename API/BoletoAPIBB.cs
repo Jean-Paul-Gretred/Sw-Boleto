@@ -18,14 +18,10 @@ namespace SwBoleto.API
     {
         // Chaves Homologação
         public static string client_id_h = Properties.Settings.Default.client_id_h;
-        //"eyJpZCI6IjFhNTVlM2ItYjZhZS00ZDBhLWFjOTIiLCJjb2RpZ29QdWJsaWNhZG9yIjowLCJjb2RpZ29Tb2Z0d2FyZSI6NTM5NzksInNlcXVlbmNpYWxJbnN0YWxhY2FvIjoxfQ";
         public static string client_secret_h = Properties.Settings.Default.client_secret_h;
-        //"eyJpZCI6IjNkNDUiLCJjb2RpZ29QdWJsaWNhZG9yIjowLCJjb2RpZ29Tb2Z0d2FyZSI6NTM5NzksInNlcXVlbmNpYWxJbnN0YWxhY2FvIjoxLCJzZXF1ZW5jaWFsQ3JlZGVuY2lhbCI6MSwiYW1iaWVudGUiOiJob21vbG9nYWNhbyIsImlhdCI6MTY3NDg0NDE2NDEyOX0";
         public static string developer_application_key_h = Properties.Settings.Default.developer_application_key_h;
-        //"051f42a12b828ab5a0fb82876b2ba990";
-        public static string client_basic = Properties.Settings.Default.client_basic;
-        //"Basic ZXlKcFpDSTZJakZoTlRWbE0ySXRZalpoWlMwMFpEQmhMV0ZqT1RJaUxDSmpiMlJwWjI5UWRXSnNhV05oWkc5eUlqb3dMQ0pqYjJScFoyOVRiMlowZDJGeVpTSTZOVE01Tnprc0luTmxjWFZsYm1OcFlXeEpibk4wWVd4aFkyRnZJam94ZlE6ZXlKcFpDSTZJak5rTkRVaUxDSmpiMlJwWjI5UWRXSnNhV05oWkc5eUlqb3dMQ0pqYjJScFoyOVRiMlowZDJGeVpTSTZOVE01Tnprc0luTmxjWFZsYm1OcFlXeEpibk4wWVd4aFkyRnZJam94TENKelpYRjFaVzVqYVdGc1EzSmxaR1Z1WTJsaGJDSTZNU3dpWVcxaWFXVnVkR1VpT2lKb2IyMXZiRzluWVdOaGJ5SXNJbWxoZENJNk1UWTNORGcwTkRFMk5ERXlPWDA=";
-
+       public static string client_basic = Properties.Settings.Default.client_basic;
+       
 
         public static async Task<Token> GerarToken()
         {
@@ -47,7 +43,6 @@ namespace SwBoleto.API
 
                     }
                     request = new HttpRequestMessage(HttpMethod.Post, URIaux);
-                    //string AuthAux = "Basic ZXlKcFpDSTZJakZoTlRWbE0ySXRZalpoWlMwMFpEQmhMV0ZqT1RJaUxDSmpiMlJwWjI5UWRXSnNhV05oWkc5eUlqb3dMQ0pqYjJScFoyOVRiMlowZDJGeVpTSTZOVE01Tnprc0luTmxjWFZsYm1OcFlXeEpibk4wWVd4aFkyRnZJam94ZlE6ZXlKcFpDSTZJak5rTkRVaUxDSmpiMlJwWjI5UWRXSnNhV05oWkc5eUlqb3dMQ0pqYjJScFoyOVRiMlowZDJGeVpTSTZOVE01Tnprc0luTmxjWFZsYm1OcFlXeEpibk4wWVd4aFkyRnZJam94TENKelpYRjFaVzVqYVdGc1EzSmxaR1Z1WTJsaGJDSTZNU3dpWVcxaWFXVnVkR1VpT2lKb2IyMXZiRzluWVdOaGJ5SXNJbWxoZENJNk1UWTNORGcwTkRFMk5ERXlPWDA=";
                     request.Headers.Add("Authorization", client_basic);
 
                     response = await client.SendAsync(request);
